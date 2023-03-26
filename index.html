@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h4>Love Compatibility Checker</h4>
+    <div class="input">
+        <img src="images/icon.jpg" alt="" class="love">
+        <form class="info">
+            <input type="text" id="yourname" placeholder="Your Name" required> <br>
+            <input type="text" id="crush" placeholder="Name of Your Crush" required> <br>
+            <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" onclick="lovescore()"> Check Compatibility</button>
+        </form>
+        <div id="loading">
+            <img src="images/amalie-steiness.gif" alt="" class="myim">
+            <hr>
+                <p>Checking.... </p>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade mode" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog mab">
+            <div class="modal-content mod">
+                <div class="modal-header">
+                    <h3 id="msg">Congratulations!!</h3>
+                    <button type="button" class="btn-close cancel" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body bdy">
+                    <b> <p id="message1"></p></b>
+                <p id="Percentage"></p>
+                <p id="message2"></p>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+           
+    <script src="js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
