@@ -75,3 +75,8 @@ button{
     margin-left: 30%;
     width: 200px;
 }
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
